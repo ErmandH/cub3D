@@ -67,8 +67,7 @@ void	init_player(t_player *pl)
 	pl->dir->j = pl->pos->j;
 	pl->rend_dist = pl->data->max_w * pl->data->zoom;
 	pl->fov = 60;
-	if (pl->data->no)
-		init_xpm(pl);
+	init_xpm(pl);
 }
 
 void	init_flag(t_flag *flag)

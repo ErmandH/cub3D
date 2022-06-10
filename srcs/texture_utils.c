@@ -32,6 +32,8 @@ void	load_xpm(t_xpm *tex_arr, t_mlx *mlx, int *tex_flag)
 					&tex_arr[i].tx_img.bpp,
 					&tex_arr[i].tx_img.line_len,
 					&tex_arr[i].tx_img.endian);
+		else
+			tex_arr[i].tx_img.addr = NULL;
 	}
 }
 
