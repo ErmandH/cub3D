@@ -40,12 +40,12 @@ void	handle_errors(int err)
 		ft_putendl_fd("RGB too few numbers given", STDERR);
 	else if (err == MAP_DUP_ERR)
 		ft_putendl_fd("Map have duplicated utility", STDERR);
-	else if (err == MAP_EXCESS_CHAR)
-		ft_putendl_fd("Map contains unrecognized char", STDERR);
 	else if (err == MAP_NOT_CLOSED)
 		ft_putendl_fd("Map is not closed", STDERR);
 	else if (err == EXT_ERR)
 		ft_putendl_fd("Map extension is not .cub", STDERR);
+	else if (err == MAP_ERR)
+		ft_putendl_fd("Map error", STDERR);
 	else
 		perror(NULL);
 	exit(1);

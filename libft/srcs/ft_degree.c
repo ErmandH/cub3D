@@ -6,7 +6,7 @@
 /*   By: akarahan <akarahan@student.42istanbul.com. +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/06 22:09:05 by akarahan          #+#    #+#             */
-/*   Updated: 2022/05/08 22:35:22 by akarahan         ###   ########.fr       */
+/*   Updated: 2022/06/13 13:30:49 by akarahan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,6 @@ int	mod_deg(int deg)
 float	fl_mod_deg(float deg)
 {
 	if ((int) deg > 360 || (int) deg < -360)
-		return (0);
+		return ((int) deg % 360);
 	return (deg);
 }

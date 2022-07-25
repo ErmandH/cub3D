@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   cub3D.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: eharuni < eharuni@student.42istanbul.co    +#+  +:+       +#+        */
+/*   By: akarahan <akarahan@student.42istanbul.com. +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/21 13:33:37 by akarahan          #+#    #+#             */
-/*   Updated: 2022/06/10 00:31:32 by eharuni          ###   ########.fr       */
+/*   Updated: 2022/06/13 13:42:25 by akarahan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,7 +69,8 @@ enum e_err
 	MAP_DUP_ERR,
 	MAP_EXCESS_CHAR,
 	MAP_NOT_CLOSED,
-	EXT_ERR
+	EXT_ERR,
+	MAP_ERR
 };
 
 enum e_general
@@ -272,8 +273,8 @@ float			tex_x_len(t_player *pl, t_ray *ray);
 int				apply_shading(t_player *pl, t_ray *ray, t_tex tex);
 
 /* key_utils.c */
-void			move_up_down(t_player *pl, int dir);
-void			move_left_right(t_player *pl, int dir);
-void			rotate(t_player *pl, int dir);
+void			move_forward_backward(t_player *pl, int sign);
+void			move_left_right(t_player *pl, int sign);
+void			rotate(t_player *pl, int sign);
 
 #endif

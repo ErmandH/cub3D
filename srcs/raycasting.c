@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   raycasting.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: eharuni < eharuni@student.42istanbul.co    +#+  +:+       +#+        */
+/*   By: akarahan <akarahan@student.42istanbul.com. +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/08 13:12:41 by akarahan          #+#    #+#             */
-/*   Updated: 2022/06/09 23:24:17 by eharuni          ###   ########.fr       */
+/*   Updated: 2022/06/13 13:09:19 by akarahan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   draw_win.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: eharuni < eharuni@student.42istanbul.co    +#+  +:+       +#+        */
+/*   By: akarahan <akarahan@student.42istanbul.com. +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/03 18:18:23 by akarahan          #+#    #+#             */
-/*   Updated: 2022/06/09 21:26:14 by eharuni          ###   ########.fr       */
+/*   Updated: 2022/06/13 13:07:24 by akarahan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

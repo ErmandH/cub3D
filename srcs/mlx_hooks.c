@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   mlx_hooks.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: eharuni < eharuni@student.42istanbul.co    +#+  +:+       +#+        */
+/*   By: akarahan <akarahan@student.42istanbul.com. +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/03 21:57:36 by akarahan          #+#    #+#             */
-/*   Updated: 2022/06/08 22:35:29 by eharuni          ###   ########.fr       */
+/*   Updated: 2022/06/13 13:08:13 by akarahan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,9 +28,9 @@ int	key_hook(int keycode, t_player *pl)
 	if (keycode == RIGHT)
 		rotate(pl, 1);
 	if (keycode == W_KEY)
-		move_up_down(pl, 1);
+		move_forward_backward(pl, 1);
 	if (keycode == S_KEY)
-		move_up_down(pl, -1);
+		move_forward_backward(pl, -1);
 	if (keycode == A_KEY)
 		move_left_right(pl, -1);
 	if (keycode == D_KEY)
@@ -64,7 +64,6 @@ int	mouse_scroll(int keycode, int x, int y, t_player *pl)
 {
 	(void)x;
 	(void)y;
-	printf("%d\n", keycode);
 	if (keycode == SCROLL_UP)
 	{
 		pl->dir->angle = fl_mod_deg(pl->dir->angle - 2);

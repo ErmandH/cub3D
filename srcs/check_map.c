@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   check_map.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: eharuni < eharuni@student.42istanbul.co    +#+  +:+       +#+        */
+/*   By: akarahan <akarahan@student.42istanbul.com. +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/02 14:40:51 by akarahan          #+#    #+#             */
-/*   Updated: 2022/06/08 22:35:29 by eharuni          ###   ########.fr       */
+/*   Updated: 2022/06/13 13:14:11 by akarahan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -115,11 +115,10 @@ void	check_map(t_map *data)
 	check_walls(data, set);
 	while (data->map[++y])
 	{
-		printf("%s\n", data->map[y]);
 		if (!ft_contains_only(data->map[y], set))
-			handle_errors(MAP_EXCESS_CHAR);
+			handle_errors(MAP_ERR);
 		dup += ft_set_occurence(data->map[y], "NWES");
-		if (dup > 1)
-			handle_errors(MAP_DUP_ERR);
 	}
+	if (dup != 1)
+		handle_errors(MAP_ERR);
 }

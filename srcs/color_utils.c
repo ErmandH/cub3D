@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   color_utils.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: eharuni < eharuni@student.42istanbul.co    +#+  +:+       +#+        */
+/*   By: akarahan <akarahan@student.42istanbul.com. +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/29 22:40:48 by akarahan          #+#    #+#             */
-/*   Updated: 2022/06/08 22:35:29 by eharuni          ###   ########.fr       */
+/*   Updated: 2022/06/13 13:09:50 by akarahan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

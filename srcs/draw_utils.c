@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   draw_utils.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: eharuni < eharuni@student.42istanbul.co    +#+  +:+       +#+        */
+/*   By: akarahan <akarahan@student.42istanbul.com. +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/07 19:00:31 by akarahan          #+#    #+#             */
-/*   Updated: 2022/06/08 22:35:29 by eharuni          ###   ########.fr       */
+/*   Updated: 2022/06/13 13:10:03 by akarahan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

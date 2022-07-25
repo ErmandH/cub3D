@@ -2,6 +2,7 @@ CC = gcc
 CFLAGS = -Wall -Werror -Wextra
 RM = rm -rf
 UNAME = $(shell uname)
+MLX_NAME = libmlx.a
 
 ifeq ($(UNAME), Linux)
 	MLX_DIR = minilibx_linux
@@ -38,7 +39,7 @@ SRC_FILES = main.c \
 			draw_utils.c \
 			raycasting.c \
 			texture_utils.c \
-			key_utils.c 		
+			key_utils.c
 
 OBJ_FILES = $(SRC_FILES:.c=.o)
 SRCS = $(addprefix $(SRC_DIR)/, $(SRC_FILES))
@@ -54,8 +55,7 @@ address: CFLAGS += -fsanitize=address -g
 address: LIBFT_OPT = address
 address: re
 
-$(NAME): $(LIBFT_DIR)/$(LIBFT_NAME) $(OBJ_DIR) $(OBJS)
-	$(MAKE) -sC $(MLX_DIR)
+$(NAME): $(LIBFT_DIR)/$(LIBFT_NAME) $(MLX_DIR)/$(MLX_NAME) $(OBJ_DIR) $(OBJS)
 	$(CC) $(CFLAGS) $(OBJS) -o $(NAME) -L$(LIBFT_DIR) -lft -L./$(MLX_DIR) -lmlx $(MLX_FLAGS) $(INCLUDES)
 
 $(OBJ_DIR):
@@ -66,6 +66,9 @@ $(OBJ_DIR)/%.o: $(SRC_DIR)/%.c
 
 $(LIBFT_DIR)/$(LIBFT_NAME):
 	$(MAKE) -sC $(LIBFT_DIR) $(LIBFT_OPT)
+
+$(MLX_DIR)/$(MLX_NAME):
+	$(MAKE) -sC $(MLX_DIR)
 
 clean:
 	$(MAKE) -sC $(MLX_DIR) clean

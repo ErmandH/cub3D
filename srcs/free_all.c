@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   free_all.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: eharuni < eharuni@student.42istanbul.co    +#+  +:+       +#+        */
+/*   By: akarahan <akarahan@student.42istanbul.com. +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/02 16:09:12 by akarahan          #+#    #+#             */
-/*   Updated: 2022/06/08 22:35:29 by eharuni          ###   ########.fr       */
+/*   Updated: 2022/06/13 13:10:06 by akarahan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
